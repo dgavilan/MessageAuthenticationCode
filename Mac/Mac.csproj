@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="MacHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VertifyHelper.cs" />
+    <Compile Include="VertifyObjects\ReviewQueryResponse_1_6_1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -14,7 +14,7 @@ namespace Mac
             // NOTE: Code taken from http://buchananweb.co.uk/security01i.aspx
 
             /*
-             Security is handled by use of a Message Authentication Code (MAC).  The MAC is generated using 
+             * Security is handled by use of a Message Authentication Code (MAC).  The MAC is generated using 
              * the Keyed-Hashing for Message Authentication (HMAC) algorithm (as defined in RFC 2104).  
              * HMAC utilizes the MD5 Message-Digest Algorithm (as defined in RFC 1321) as the hash function.
              */
@@ -28,8 +28,15 @@ namespace Mac
             //var hmacsha384 = new HMACSHA384(keyByte);
             //var hmacsha512 = new HMACSHA512(keyByte);
 
+
+            
+
+
             var messageBytes = encoding.GetBytes(message);
             var hashMessage = hmacmd5.ComputeHash(messageBytes);
+
+
+
 
             return ByteToString(hashMessage);
 
@@ -48,7 +55,10 @@ namespace Mac
             //hashmessage = hmacsha512.ComputeHash(messageBytes);
 
             //this.hmac5.Text = ByteToString(hashmessage);
+
         }
+
+
 
         public static string ByteToString(byte[] buff)
         {
